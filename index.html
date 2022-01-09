@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>GioGio's Simple Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <div id="display">
+            <button id="clear">&times;</button>
+            <div id="disp-area">
+                <p id="hist-value"></p>
+                <p id="value">0</p>
+            </div>
+        </div>
+        <div id="buttons">
+            <button onclick="addNum(7)" type="button" class="buttons" id="num-seven">7</button>
+            <button onclick="addNum(8)" type="button" class="buttons" id="num-eight">8</button>
+            <button onclick="addNum(9)" type="button" class="buttons" id="num-nine">9</button>
+            <button onclick="selectOperation('+')" type="button" class="buttons" id="opr-plus">+</button>
+            <button onclick="addNum(4)" type="button" class="buttons" id="num-four">4</button>
+            <button onclick="addNum(5)" type="button" class="buttons" id="num-five">5</button>
+            <button onclick="addNum(6)" type="button" class="buttons" id="num-six">6</button>
+            <button onclick="selectOperation('-')" type="button" class="buttons" id="opr-minus">-</button>
+            <button onclick="addNum(1)" type="button" class="buttons" id="num-one">1</button>
+            <button onclick="addNum(2)" type="button" class="buttons" id="num-two">2</button>
+            <button onclick="addNum(3)" type="button" class="buttons" id="num-three">3</button>
+            <button onclick="selectOperation('*')" type="button" class="buttons" id="opr-mult">*</button>
+            <button onclick="addNum(0)" type="button" class="buttons" id="num-zero">0</button>
+            <button onclick="addNum('.')" type="button" class="buttons" id="but-dec">.</button>
+            <button onclick="selectOperation('/')" type="button" class="buttons" id="opr-div">/</button>
+            <button onclick="renderResult()" type="button" class="buttons" id="but-equal">=</button>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/index.js"></script>
+</html>
